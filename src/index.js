@@ -1,3 +1,8 @@
-import willGetPhone from "./promise";
+import { willGetPhone, promiseChain, ShowPhone, getName, getAge, allTogether, chainedAllPromises, buyFruits } from "./promise";
 
-console.log( willGetPhone );
+// promiseChain();
+// getName();
+// getAge();
+// allTogether();
+// chainedAllPromises();
+buyFruits();
