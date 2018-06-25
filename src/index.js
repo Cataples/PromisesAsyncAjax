@@ -1,3 +1,3 @@
-import message from "./app";
+import willGetPhone from "./promise";
 
-console.log( message );
+console.log( willGetPhone );
