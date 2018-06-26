@@ -32,7 +32,7 @@ let ShowPhone = phone => {
 };
 
 //  ------------------------------------------------------------------
-const isAge = false;
+const isAge = true;
 
 const namePromise = new Promise( (resolve, reject) => {
         resolve("Cata")
@@ -116,3 +116,5 @@ const buyFruits = () => {
 
 
 export { willGetPhone, promiseChain, ShowPhone, getName, getAge, allTogether, chainedAllPromises, buyFruits };
+
+
