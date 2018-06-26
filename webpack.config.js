@@ -24,5 +24,13 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, "bundle"),
         filename: "bundle.js",
-    }
+    },
+    devServer: {
+        proxy: {
+          '/api': {
+            target: 'http://localhost:3000',
+            pathRewrite: {'^/api' : ''}
+          }
+        }
+      }
 };

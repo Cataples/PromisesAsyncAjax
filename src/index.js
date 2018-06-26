@@ -1,24 +1,25 @@
-import { willGetPhone, promiseChain, ShowPhone, getName, getAge, allTogether, chainedAllPromises, buyFruits } from "./promise";
-import { fetchHandle, pokeFetch } from "./fetchGet";
-import { PostMethod } from "./fetchPost";
-import { putMethod } from "./fetchPut";
+import { get, post, put, delet } from "allFetches";
 
-// promiseChain();
-// getName();
-// getAge();
-// allTogether();
-// chainedAllPromises();
-// buyFruits();
+get( "/api/users" )
+    .then( data => data.forEach( el => console.log( el ) ) );
 
-// fetchHandle();
-// PostMethod('./users.json', {
-//     id: 4,
-//     body: "cata",
-//     age: 26
+get( "/api/users/5" )
+    .then( data => console.log( data ) );
+
+const getUserById = id => {
+    return get( `/api/users/${id}` )
+}
+
+getUserById(5).then( data => console.log( data ) );
+
+// post("/api/users", {
+//     nume: "Darian",
+//     varsta: 18,
 // });
 
-putMethod( "https://jsonplaceholder.typicode.com/posts/1", {
-    userId: 1,
-    id: 1,
-    name: "cata"
-});
+put("/api/users",{
+    nume: "Liviu Dragnea",
+    varsta: "la puscarie"
+}, 1);
+
+delet("/api/users/5");

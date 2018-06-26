@@ -1,9 +1,51 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+  "users": [
+    {
+      "nume": "Liviu Dragnea",
+      "varsta": "mort",
+      "id": 1
+    },
+    {
+      "nume": "ples",
+      "varsta": 26,
+      "id": 6
+    },
+    {
+      "nume": "ples",
+      "varsta": 26,
+      "id": 7
+    },
+    {
+      "nume": "ples",
+      "varsta": 26,
+      "id": 8
+    },
+    {
+      "nume": "Darian",
+      "varsta": 18,
+      "id": 9
+    },
+    {
+      "nume": "Liviu Dragnea",
+      "varsta": "mort",
+      "id": 10
+    },
+    {
+      "nume": "Darian",
+      "varsta": 18,
+      "id": 11
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  "fructe": [
+    {
+      "id": 1,
+      "nume": "mere",
+      "tara": "Romania"
+    },
+    {
+      "id": 2,
+      "nume": "prune",
+      "tara": "slovacia"
+    }
+  ]
 }
