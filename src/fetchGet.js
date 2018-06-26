@@ -6,5 +6,23 @@ const fetchHandle = () => {
         .catch( error => console.log( "error: " + error))
 }   
 
+const pokeFetch = () => {
+    fetch( "https://jsonplaceholder.typicode.com/posts/" )
+        .then( data => data.json() )
+        .then( data => {
+            data.map( ( item ) => console.log( item.title ) );
+        } )
+        .catch( ( err ) => console.log( "err: " + err ) );
+}
 
-export { fetchHandle } ;
+// const usersFetch = () => {
+//     fetch( "../../users.json" )
+//         .then( data => data.json() )
+//         .then( data => {
+//             data.map( ( item ) => console.log( item.title ) );
+//         } )
+//         .catch( ( err ) => console.log( "err: " + err ) );
+// }
+
+
+export { fetchHandle, pokeFetch, usersFetch } ;

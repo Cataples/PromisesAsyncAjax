@@ -1,9 +1,3 @@
-const url = 'https://example.com/profile';
-const data = {
-    name: "cata",
-    age: 26
-}
-
 const PostMethod = ( url, data ) => {
     fetch( url, {
         method: "POST",
@@ -13,7 +7,7 @@ const PostMethod = ( url, data ) => {
         },
     }).then( data => data.json() )
     .catch( error => console.log( error + " - " + JSON.stringify( data ) ) )
-    .then( data => console.log( "Succes " + data ) );
+    .then( data => console.log( "Succes posted " + JSON.stringify(data) ) );
 }
 
 
