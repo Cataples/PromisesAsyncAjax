@@ -1,6 +1,6 @@
 import { get, post, put, delet, patch } from "allFetches";
 import { asTestFunc } from "./asyncAwait.js"
-import { p1, p2, p3 } from "./promiseAll"
+import { p1, p2, p3, p4 } from "./promiseAll"
 
 // get( "/api/users" )
 //     .then( data => data.forEach( el => console.log( el ) ) );
@@ -29,5 +29,6 @@ asTestFunc( "https://api.chucknorris.io/jokes/random"  )
 
 
 
-Promise.all([p1, p2, p3])
-    .then( data => console.log( data ) );
+Promise.all([p1, p2, p3, p4])
+    .then( data => console.log( data ) )
+    .catch( err => console.log( err ) );

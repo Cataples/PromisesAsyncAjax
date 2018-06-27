@@ -16,5 +16,7 @@ const p3 = new Promise(function( resolve ) {
     }, 3000)
 })
 
+const p4 = 2;
 
-export { p1, p2, p3 };
+
+export { p1, p2, p3, p4 };
