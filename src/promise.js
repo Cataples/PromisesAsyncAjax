@@ -112,6 +112,9 @@ const buyFruits = () => {
         .catch( error => {
             console.log( error );
         })
+        .finally( () => {
+            console.log( "this is printed if promise is fulfilled or rejected as well" );
+        })
 }
 
 
